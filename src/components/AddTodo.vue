@@ -31,8 +31,10 @@ export default {
         title: this.title,
         completed: false
       }
-      // // Send up to parent
+      // Send up to parent
       this.$emit('add-todo', newTodo)
+
+      this.title = ''
     }
   }
 }
